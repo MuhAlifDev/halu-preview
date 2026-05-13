@@ -32,7 +32,7 @@ function CountUp({ target, suffix, trigger, noAnim }: {
     requestAnimationFrame(tick)
   }, [trigger, target, noAnim])
 
-  return <span style={{ fontVariantNumeric: 'tabular-nums' }}>{count.toLocaleString()}{suffix}</span>
+  return <span style={{ fontVariantNumeric: 'tabular-nums' }}>{noAnim ? count : count.toLocaleString()}{suffix}</span>
 }
 
 function StatCard({ stat, index }: { stat: typeof STATS[0]; index: number }) {
