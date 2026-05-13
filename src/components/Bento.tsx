@@ -113,7 +113,7 @@ export default function Bento() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-auto md:grid-rows-[280px_280px] gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[280px] md:grid-rows-[280px_280px] gap-4">
         {CARDS.map((card, i) => <BentoCard key={card.id} card={card} index={i} />)}
       </div>
     </section>
