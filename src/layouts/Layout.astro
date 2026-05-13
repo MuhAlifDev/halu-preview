@@ -1,0 +1,27 @@
+---
+import '../styles/globals.css'
+
+interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'TUKU — Premium Single-Origin Coffee',
+  description = 'Crafted from the soul of the bean. Premium single-origin coffee roasted with precision and passion.',
+} = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#F8F3EA" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-cream text-forest font-sans overflow-x-hidden">
+    <slot />
+  </body>
+</html>

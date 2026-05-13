@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro'
+import LenisScroll     from '../components/LenisScroll'
+import Navbar          from '../components/Navbar'
+import SequenceScroll  from '../components/SequenceScroll'
+import About           from '../components/About'
+import Bento           from '../components/Bento'
+import Stats           from '../components/Stats'
+import MenuSection     from '../components/Menu'
+import Testimonials    from '../components/Testimonials'
+import Branches        from '../components/Branches'
+import SocialMedia     from '../components/SocialMedia'
+import CTASection      from '../components/CTASection'
+import Footer          from '../components/Footer'
+---
+
+<Layout title="Halu. — Your everyday cafe, Est. 2020">
+  <LenisScroll    client:only="react" />
+  <Navbar         client:only="react" />
+  <SequenceScroll client:only="react" />
+
+  <div class="-mt-[100vh] relative z-10">
+    <About        client:only="react" />
+    <Bento        client:only="react" />
+    <Stats        client:only="react" />
+    <MenuSection  client:only="react" />
+    <Testimonials client:only="react" />
+    <Branches     client:only="react" />
+    <SocialMedia  client:only="react" />
+    <CTASection   client:only="react" />
+    <Footer       client:only="react" />
+  </div>
+</Layout>

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Set-Location \"C:\\\\Users\\\\muhal\\\\OneDrive\\\\Desktop\\\\halu-demo\"; Start-Process -NoNewWindow -FilePath \"npm\" -ArgumentList \"run\", \"dev\" -RedirectStandardOutput \"$env:TEMP\\\\astro-dev.log\" -PassThru | Select-Object -ExpandProperty Id)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:4321)"
+    ]
+  }
+}
