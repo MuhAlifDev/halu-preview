@@ -19,24 +19,22 @@ const SOCIALS = [
   { label: 'TW', full: 'Twitter',   href: '#' },
 ]
 
-function HaluLogo() {
+function BrandMark() {
   return (
-    <div
+    <span
       style={{
-        maskImage: 'url(/halu_logo.png)',
-        WebkitMaskImage: 'url(/halu_logo.png)',
-        maskSize: 'contain',
-        WebkitMaskSize: 'contain',
-        maskRepeat: 'no-repeat',
-        WebkitMaskRepeat: 'no-repeat',
-        maskPosition: 'center left',
-        WebkitMaskPosition: 'center left',
-        backgroundColor: CREAM,
-        width: '110px',
-        height: '38px',
+        fontFamily: 'Georgia, serif',
+        fontWeight: 700,
+        letterSpacing: '-0.04em',
+        lineHeight: 1,
+        fontSize: '38px',
+        color: CREAM,
+        display: 'inline-block',
       }}
-      aria-label="Halu."
-    />
+      aria-label="Halo. Coffee"
+    >
+      Halo.
+    </span>
   )
 }
 
@@ -62,13 +60,13 @@ export default function Footer() {
       {/* Top accent */}
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '1px', background: `linear-gradient(to right, transparent, ${COFFEE}80, transparent)` }} />
 
-      {/* HALU watermark */}
+      {/* HALO watermark */}
       <motion.div
         style={{ position: 'absolute', bottom: 0, left: 0, right: 0, display: 'flex', justifyContent: 'center', pointerEvents: 'none', userSelect: 'none', overflow: 'hidden', y: logoY, opacity: logoOpacity }}
         aria-hidden
       >
         <span style={{ fontFamily: 'Georgia, serif', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1, fontSize: 'clamp(8rem, 28vw, 22rem)', color: 'rgba(248,243,234,0.07)' }}>
-          HALU
+          HALO
         </span>
       </motion.div>
 
@@ -77,10 +75,10 @@ export default function Footer() {
         {/* Brand col */}
         <div style={{ gridColumn: 'span 2' }}>
           <div style={{ marginBottom: '20px' }}>
-            <HaluLogo />
+            <BrandMark />
           </div>
           <p style={{ color: 'rgba(248,243,234,0.80)', fontFamily: 'system-ui, sans-serif', fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, maxWidth: '18rem', marginBottom: '2rem' }}>
-            Your everyday cafe, brewed with care. Est. 2020, Leppangeng.
+            Your everyday cafe, brewed with care. Est. 2020, Riverside.
           </p>
           <div style={{ display: 'flex', gap: '12px' }}>
             {SOCIALS.map((s) => (
@@ -147,7 +145,7 @@ export default function Footer() {
         borderTop: '1px solid rgba(248,243,234,0.15)',
       }}>
         <span style={{ color: 'rgba(248,243,234,0.60)', fontSize: '0.7rem', letterSpacing: '0.12em', fontFamily: 'system-ui, sans-serif' }}>
-          © {new Date().getFullYear()} Halu. Coffee. All rights reserved.
+          © {new Date().getFullYear()} Halo. Coffee. All rights reserved.
         </span>
         <div style={{ display: 'flex', gap: '24px' }}>
           {['Privacy Policy', 'Terms of Service', 'Cookie Settings'].map((item) => (

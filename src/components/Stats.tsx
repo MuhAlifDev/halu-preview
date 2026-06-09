@@ -9,8 +9,8 @@ const COFFEE  = '#C4832A'
 const FOREST  = '#1A4D2E'
 
 const STATS = [
-  { value: 2020, suffix: '',    label: 'Year Founded', desc: 'Born in Leppangeng with big dreams', noAnim: true },
-  { value: 8,    suffix: '',    label: 'Branches',     desc: 'Spread across South Sulawesi' },
+  { value: 2020, suffix: '',    label: 'Year Founded', desc: 'Born in Riverside with big dreams', noAnim: true },
+  { value: 8,    suffix: '',    label: 'Branches',     desc: 'Spread across three cities' },
   { value: 99,   suffix: '.8%', label: 'Satisfaction', desc: 'Customer reviewed excellence' },
 ]
 

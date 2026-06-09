@@ -17,27 +17,25 @@ const SOCIALS = [
   { label: 'Twitter',   href: '#' },
 ]
 
-// Logo uses mask-image to allow color switching via backgroundColor
-function HaluLogo({ color, className = '' }: { color: string; className?: string }) {
+// Dummy text wordmark — color switches via text color
+function BrandMark({ color, className = '' }: { color: string; className?: string }) {
   return (
-    <div
+    <span
       className={className}
       style={{
-        maskImage: 'url(/halu_logo.png)',
-        WebkitMaskImage: 'url(/halu_logo.png)',
-        maskSize: 'contain',
-        WebkitMaskSize: 'contain',
-        maskRepeat: 'no-repeat',
-        WebkitMaskRepeat: 'no-repeat',
-        maskPosition: 'center left',
-        WebkitMaskPosition: 'center left',
-        backgroundColor: color,
-        width: '90px',
-        height: '30px',
-        transition: 'background-color 0.3s ease',
+        fontFamily: 'Georgia, serif',
+        fontWeight: 700,
+        letterSpacing: '-0.04em',
+        lineHeight: 1,
+        fontSize: '28px',
+        color,
+        display: 'inline-block',
+        transition: 'color 0.3s ease',
       }}
-      aria-label="Halu."
-    />
+      aria-label="Halo. Coffee"
+    >
+      Halo.
+    </span>
   )
 }
 
@@ -126,7 +124,7 @@ export default function Navbar() {
         transition={{ duration: 0.4 }}
       >
         <a href="#" className="relative z-50">
-          <HaluLogo color={logoColor} />
+          <BrandMark color={logoColor} />
         </a>
 
         <button
@@ -190,11 +188,11 @@ export default function Navbar() {
                   ))}
                 </div>
                 <div className="flex flex-col gap-1 text-right">
-                  <a href="mailto:hello@halu.coffee"
+                  <a href="mailto:hello@halo.coffee"
                     className="text-cream/40 text-xs tracking-wider hover:text-cream transition-colors font-sans">
-                    hello@halu.coffee
+                    hello@halo.coffee
                   </a>
-                  <span className="text-cream/20 text-xs tracking-wider font-sans">Bandung, Indonesia</span>
+                  <span className="text-cream/20 text-xs tracking-wider font-sans">Riverside</span>
                 </div>
               </motion.div>
             </div>

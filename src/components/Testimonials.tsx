@@ -10,30 +10,30 @@ const COFFEE = '#C4832A'
 const TESTIMONIALS = [
   {
     id: 1,
-    quote: "Halu. changed the way I start every morning. It's not just coffee — it's a ceremony I'd never skip.",
+    quote: "Halo. changed the way I start every morning. It's not just coffee — it's a ceremony I'd never skip.",
     author: 'Sarah Kessler',
-    role: 'Architect, Makassar',
+    role: 'Architect, Riverside',
     avatar: 'https://i.pravatar.cc/80?img=47',
   },
   {
     id: 2,
     quote: "The complexity in every sip is unlike anything I've tasted. The signature blend is pure poetry.",
     author: 'James Morioka',
-    role: 'Chef, Makassar',
+    role: 'Chef, Riverside',
     avatar: 'https://i.pravatar.cc/80?img=11',
   },
   {
     id: 3,
     quote: "From bean to cup, the craftsmanship is undeniable. You can taste the dedication in every ounce.",
     author: 'Aiko Tanaka',
-    role: 'Designer, Soppeng',
+    role: 'Designer, Lakeview',
     avatar: 'https://i.pravatar.cc/80?img=25',
   },
   {
     id: 4,
-    quote: "My mornings don't start without Halu. It's become the non-negotiable anchor of my day.",
+    quote: "My mornings don't start without Halo. It's become the non-negotiable anchor of my day.",
     author: 'Marcus Levin',
-    role: 'Writer, Leppangeng',
+    role: 'Writer, Westbrook',
     avatar: 'https://i.pravatar.cc/80?img=33',
   },
 ]

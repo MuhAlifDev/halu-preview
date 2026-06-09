@@ -10,7 +10,7 @@ const COFFEE = '#C4832A'
 const PLATFORMS = [
   {
     name: 'Instagram',
-    handle: '@halu.coffee',
+    handle: '@halo.coffee',
     desc: 'Daily shots, behind the scenes, and community moments.',
     url: 'https://instagram.com',
     stat: '12K',
@@ -18,7 +18,7 @@ const PLATFORMS = [
   },
   {
     name: 'TikTok',
-    handle: '@halu.coffee',
+    handle: '@halo.coffee',
     desc: 'Watch us brew, pour, and spill the beans on everything.',
     url: 'https://tiktok.com',
     stat: '28K',
@@ -26,7 +26,7 @@ const PLATFORMS = [
   },
   {
     name: 'Twitter / X',
-    handle: '@halucoffee',
+    handle: '@halocoffee',
     desc: 'Hot takes, chill vibes, and updates from our team.',
     url: 'https://twitter.com',
     stat: '4.2K',
@@ -150,7 +150,7 @@ export default function SocialMedia() {
           </span>
         </div>
         <h2 style={{ fontFamily: 'Georgia, serif', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1, fontSize: 'clamp(2.5rem, 6vw, 5rem)', color: CREAM }}>
-          Stay connected<br />with Halu.
+          Stay connected<br />with Halo.
         </h2>
       </motion.div>
 

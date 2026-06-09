@@ -4,14 +4,14 @@ import { useRef } from 'react'
 import { motion, useScroll, useTransform, useInView } from 'motion/react'
 
 const BRANCHES = [
-  { id: 1, name: 'Halu. Leppangeng',          address: 'Jl. Poros Leppangeng No. 12',    city: 'Leppangeng, Barru',          hours: '07.00 – 22.00' },
-  { id: 2, name: 'Halu. Leppangeng Selatan',  address: 'Jl. Cemara No. 45',              city: 'Leppangeng, Barru',          hours: '08.00 – 22.00' },
-  { id: 3, name: 'Halu. Leppangeng Utara',    address: 'Jl. Trans Sulawesi No. 67',      city: 'Leppangeng, Barru',          hours: '07.00 – 21.00' },
-  { id: 4, name: 'Halu. Makassar',            address: 'Jl. Penghibur No. 78',           city: 'Makassar, Sulawesi Selatan', hours: '07.00 – 23.00' },
-  { id: 5, name: 'Halu. Pettarani',           address: 'Jl. AP. Pettarani No. 34',       city: 'Makassar, Sulawesi Selatan', hours: '09.00 – 23.00' },
-  { id: 6, name: 'Halu. Panakkukang',         address: 'Jl. Boulevard No. 90',           city: 'Makassar, Sulawesi Selatan', hours: '08.00 – 22.00' },
-  { id: 7, name: 'Halu. Soppeng',             address: 'Jl. Kemakmuran No. 56',          city: 'Watansoppeng, Soppeng',      hours: '07.00 – 21.00' },
-  { id: 8, name: 'Halu. Salotungo',           address: 'Jl. Salotungo No. 23',           city: 'Watansoppeng, Soppeng',      hours: '08.00 – 22.00' },
+  { id: 1, name: 'Halo. Riverside Central',  address: 'Jl. Melati No. 12',     city: 'Riverside',  hours: '07.00 – 22.00' },
+  { id: 2, name: 'Halo. Riverside South',    address: 'Jl. Cemara No. 45',     city: 'Riverside',  hours: '08.00 – 22.00' },
+  { id: 3, name: 'Halo. Riverside North',    address: 'Jl. Anggrek No. 67',    city: 'Riverside',  hours: '07.00 – 21.00' },
+  { id: 4, name: 'Halo. Westbrook',          address: 'Jl. Mawar No. 78',      city: 'Westbrook',  hours: '07.00 – 23.00' },
+  { id: 5, name: 'Halo. Westbrook Plaza',    address: 'Jl. Kenanga No. 34',    city: 'Westbrook',  hours: '09.00 – 23.00' },
+  { id: 6, name: 'Halo. Westbrook Park',     address: 'Jl. Boulevard No. 90',  city: 'Westbrook',  hours: '08.00 – 22.00' },
+  { id: 7, name: 'Halo. Lakeview',           address: 'Jl. Dahlia No. 56',     city: 'Lakeview',   hours: '07.00 – 21.00' },
+  { id: 8, name: 'Halo. Lakeview Bay',       address: 'Jl. Teratai No. 23',    city: 'Lakeview',   hours: '08.00 – 22.00' },
 ]
 
 function BranchCard({ branch, index }: { branch: typeof BRANCHES[0]; index: number }) {
@@ -70,7 +70,7 @@ export default function Branches() {
             8 places<br />to find us.
           </h2>
           <p className="text-forest/55 font-sans font-light text-sm max-w-xs leading-relaxed md:text-right">
-            Leppangeng, Makassar, and Soppeng — growing because you keep coming back.
+            Riverside, Westbrook, and Lakeview — growing because you keep coming back.
           </p>
         </div>
       </motion.div>

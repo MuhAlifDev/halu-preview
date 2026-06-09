@@ -8,7 +8,7 @@ const CARDS = [
     id: 1,
     title: 'Fresh Every Morning',
     sub: 'Our Signature Drinks',
-    img: '/halu-drinks.jpg',
+    img: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
     span: 'md:col-span-2 md:row-span-2',
   },
   {
@@ -28,7 +28,7 @@ const CARDS = [
   {
     id: 4,
     title: 'Good Vibes Only',
-    sub: 'Halu. Space',
+    sub: 'Halo. Space',
     img: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80',
     span: 'md:col-span-1 md:row-span-2',
   },

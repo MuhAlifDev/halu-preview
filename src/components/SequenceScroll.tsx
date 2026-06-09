@@ -7,28 +7,26 @@ const TOTAL_FRAMES = 240
 const CANVAS_BG = '#0c0a07'
 const getFramePath = (i: number) => `/sequence/ezgif-frame-${String(i).padStart(3, '0')}.jpg`
 
-// Renders the logo using CSS mask-image so backgroundColor = fill color
-function HaluLogo({ color, width = '110px', height = '38px' }: {
+// Dummy text wordmark — color switches via text color
+function BrandMark({ color, height = '38px' }: {
   color: string; width?: string; height?: string
 }) {
   return (
-    <div
+    <span
       style={{
-        maskImage: 'url(/halu_logo.png)',
-        WebkitMaskImage: 'url(/halu_logo.png)',
-        maskSize: 'contain',
-        WebkitMaskSize: 'contain',
-        maskRepeat: 'no-repeat',
-        WebkitMaskRepeat: 'no-repeat',
-        maskPosition: 'center',
-        WebkitMaskPosition: 'center',
-        backgroundColor: color,
-        width,
-        height,
-        transition: 'background-color 0.3s',
+        fontFamily: 'Georgia, serif',
+        fontWeight: 700,
+        letterSpacing: '-0.04em',
+        lineHeight: 1,
+        color,
+        fontSize: height,
+        display: 'inline-block',
+        transition: 'color 0.3s',
       }}
-      aria-label="Halu."
-    />
+      aria-label="Halo. Coffee"
+    >
+      Halo.
+    </span>
   )
 }
 
@@ -189,7 +187,7 @@ export default function SequenceScroll() {
                 transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.1 }}
               >
                 {/* Preloader logo — 3× size */}
-                <HaluLogo color="#F8F3EA" width="clamp(240px, 35vw, 360px)" height="clamp(80px, 12vw, 120px)" />
+                <BrandMark color="#F8F3EA" width="clamp(240px, 35vw, 360px)" height="clamp(80px, 12vw, 120px)" />
               </motion.div>
             </div>
 
@@ -213,7 +211,7 @@ export default function SequenceScroll() {
               style={{ color: '#c4832a', fontSize: 'clamp(0.75rem, 1.2vw, 0.95rem)' }}
               initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
             >
-              Since 2020 · Leppangeng
+              Since 2020 · Riverside
             </motion.p>
           </motion.div>
         )}
@@ -233,17 +231,17 @@ export default function SequenceScroll() {
             className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 pointer-events-none"
             style={{ opacity: titleOpacity, y: titleY }}
           >
-            {/* "Since 2020 Leppangeng" — bigger, coffee color */}
+            {/* "Since 2020 Riverside" — bigger, coffee color */}
             <p
               className="font-sans uppercase tracking-[0.2em] mb-8"
               style={{ color: '#c4832a', fontSize: 'clamp(0.9rem, 1.6vw, 1.15rem)' }}
             >
-              Since 2020 · Leppangeng
+              Since 2020 · Riverside
             </p>
 
             {/* Logo — 3× size */}
             <div className="flex justify-center mb-6">
-              <HaluLogo color="#F8F3EA" width="clamp(260px, 38vw, 440px)" height="clamp(86px, 13vw, 148px)" />
+              <BrandMark color="#F8F3EA" width="clamp(260px, 38vw, 440px)" height="clamp(86px, 13vw, 148px)" />
             </div>
 
             <p className="text-cream/60 text-base md:text-xl font-sans font-light tracking-wide mt-2 max-w-md">

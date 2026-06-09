@@ -88,7 +88,7 @@ export default function CTASection() {
         <motion.div className="mb-3" style={{ opacity: subOpacity }}>
           <div className="flex items-center justify-center gap-4">
             <div className="w-8 h-px bg-coffee/60" />
-            <span className="text-coffee text-[0.6rem] tracking-[0.5em] uppercase font-sans">Halu. Coffee</span>
+            <span className="text-coffee text-[0.6rem] tracking-[0.5em] uppercase font-sans">Halo. Coffee</span>
             <div className="w-8 h-px bg-coffee/60" />
           </div>
         </motion.div>
@@ -104,7 +104,7 @@ export default function CTASection() {
           className="text-cream/60 text-sm md:text-base font-sans font-light tracking-wide mb-12 max-w-md mx-auto"
           style={{ opacity: subOpacity }}
         >
-          Find your nearest Halu. branch or order online. Fresh every day, for everyone.
+          Find your nearest Halo. branch or order online. Fresh every day, for everyone.
         </motion.p>
 
         <motion.div
